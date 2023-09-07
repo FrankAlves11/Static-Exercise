@@ -2,9 +2,14 @@
 {
     public class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            double fahrenheit = 212;
+            double celsius = 100;
+
+            Console.WriteLine($"{fahrenheit}°F is {TempConverter.FahrenheitToCelsius(fahrenheit)}°C.");
+            Console.WriteLine($"{celsius}°C is {TempConverter.CelciusToFahrenheit(celsius)}°F.");
+
         }
     }
 }
